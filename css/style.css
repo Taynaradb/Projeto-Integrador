@@ -35,7 +35,9 @@ animation: beat 1.5s infinite;
         transform: scale(1.5);
     }
 }
-/* finishes beating heart when page loads */
+ /* finishes beating heart when page loads */
+
+/*header starts */
 
 .header{
     background-image: url(../images/background.jpg);
@@ -87,7 +89,7 @@ button{
     background-color:#fff;
 }
 
-/*first section finished */
+/*header finished */
 
 /*start of nav bar*/
 
@@ -184,10 +186,9 @@ nav{
 
 /* Nav bar finish*/
 
-section{
-    height: 1000px;
-}
-h1{
+/*start of project section*/
+
+.h1-projeto{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -196,3 +197,74 @@ h1{
     margin-top: 60px;
     font-size: 30px;
 }
+
+.section-projeto{
+    height: 450px;
+}
+
+.center-text{
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.continue{
+    text-decoration: none;
+    color: #DA1552;
+}
+
+
+
+/*end of project section*/
+
+/*start of news section*/
+
+.section-news{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.coluna{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.quote1 img{
+    width: 30px;
+}
+.quote2 img{
+    width: 30px;  
+    float: right;
+}
+
+.news-des{
+    padding-top: 15%;
+}
+
+.place{
+position: relative;
+padding-top: 15%;
+left: 40%;
+}
+
+/*end of news section*/
+
+/*button*/
+
+
+.button{
+    background-color: #DA1552;
+    display: block;
+    width: 115px;
+    height: 25px;
+    text-align: center;
+    border-radius: 18px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    text-decoration: none;
+}
+
+
+/*button*/

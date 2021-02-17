@@ -219,6 +219,11 @@ nav{
 
 /*start of news section*/
 
+.section-pink{
+    background-color: #f09ead;
+    height: 500px;
+}
+
 .section-news{
     display: flex;
     justify-content: center;
@@ -229,6 +234,7 @@ nav{
 .coluna{
     margin-left: 25px;
     margin-right: 25px;
+    margin-top: 60px;
 }
 .quote1 img{
     width: 30px;
@@ -247,6 +253,7 @@ position: relative;
 padding-top: 15%;
 left: 40%;
 }
+
 
 /*end of news section*/
 
@@ -268,3 +275,33 @@ left: 40%;
 
 
 /*button*/
+
+/*start of  video section*/
+.section-white{
+    height: 500px;
+}
+
+.videosize{
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 60px;
+}
+/*end of video section*/
+
+/*start of  reals section*/
+
+
+.section-real{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.count{
+    position: relative;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 225px;
+}
+
+/*end of reals section*/

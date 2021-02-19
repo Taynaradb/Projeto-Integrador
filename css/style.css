@@ -290,7 +290,22 @@ left: 40%;
 
 /*start of  reals section*/
 
-
+.title{
+  position: absolute;
+  text-align: center;
+  margin-top: 25px;
+  font-size: 30px;
+}
+.title-desc{
+  position: absolute;
+  text-align: center;
+  margin-top: 70px;
+}
+.real-desc{
+  position: absolute;
+  text-align: center;
+  margin-top: 75px;
+}
 .section-real{
     display: flex;
     justify-content: center;
@@ -314,21 +329,56 @@ left: 40%;
   position: absolute;
   white-space: nowrap;
   margin-left: -40px;
+  margin-top: 6px;
 }
 .cap2{
   position: absolute;
   white-space: nowrap;
  margin-left: 20px;
+  margin-top: 6px;
 }
 .cap3{
   position:absolute;
   white-space: nowrap;
   margin-left: 20px;
+  margin-top: 6px;
 }
 .cap4{
   position:absolute;
   white-space: nowrap;
-  margin-left: 15px;
+  margin-left: 5px;
+  margin-top: 6px;
 }
 
 /*end of reals section*/
+.patro{
+    position: relative;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 225px;
+}
+
+/*start of sponser section*/
+
+
+/* end of sponser section */
+
+/*start of footer*/
+footer{
+  margin: 50px;
+}
+.contato div{
+  font-size: 20px;
+  margin-left: 40px;
+}
+.rede-sociais{
+  margin-top: 20px;
+  margin-left: 25px;
+}
+
+.navfooter{
+  float: right;
+  margin-right: 300px;
+ 
+}
+/*end of footer*/

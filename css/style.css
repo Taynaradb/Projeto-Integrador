@@ -304,4 +304,31 @@ left: 40%;
     margin-top: 225px;
 }
 
+.text{
+  display: flex;
+  position: absolute;
+  font-size: 50px;
+  margin-left: 65px;
+}
+.cap1{
+  position: absolute;
+  white-space: nowrap;
+  margin-left: -40px;
+}
+.cap2{
+  position: absolute;
+  white-space: nowrap;
+ margin-left: 20px;
+}
+.cap3{
+  position:absolute;
+  white-space: nowrap;
+  margin-left: 20px;
+}
+.cap4{
+  position:absolute;
+  white-space: nowrap;
+  margin-left: 15px;
+}
+
 /*end of reals section*/

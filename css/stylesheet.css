@@ -1,0 +1,21 @@
+/* START of Project section */
+.projeto{
+    text-align: center;
+}
+
+.continue{
+    text-decoration: none;
+    color: #DA1552;
+    font-weight: bold;
+}
+
+/* END of Project section */
+
+/* START of NEWS section */
+
+.news{
+    align-items: center;
+    display: flex;
+}
+
+/* END of NEWS section */

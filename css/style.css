@@ -4,8 +4,11 @@
     box-sizing: border-box;
 }
 
+body{
+    font-size: 16px;
+}
+
 html{
-    font-size: 15px;
     font-family: 'Inconsolata', monospace;
 }
 
@@ -92,216 +95,194 @@ button{
 /*header finished */
 
 /*start of nav bar*/
-
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
+.menu-bar{
     background-color: #f09ead;
-    position: sticky;
-    top: 0;
-}
-
-.NavLogo{
-    color: rgb(255, 247, 247);
     text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 20px;
 }
-
-.nav-links{
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
+.nav-link{
+    font-size: 16px;
+    margin: 3px;
+    color: #fff!important;
+    font-weight: 500;
 }
-
-.nav-links a{
-    color: rgb(255, 247, 247);
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 14px;
+.navbar-nav{
+    text-align: right;
+    margin-right: 20px;
 }
-
-.nav-links li{
-    list-style: none;
+.menu-bar .navbar-toggler{
+    padding-right: 20px;
+    outline: none!important;
+    border: none!important;
+    color: #fff;
 }
-
-.burger{
-    display: none;
-    cursor: pointer;
+.navbar .fa{
+    color: #fff;
+    font-size: 26px;
 }
-
-.burger div{
-    width: 25px;
-    height: 3px;
-    background-color:rgb(255, 247, 247);
-    margin: 5px;
-    border-radius: 80px;
-    transition: all 0.3s ease-in;
+nav.link:hover{
+    font-weight: 600;
+    border-bottom: 1px solid #fff;
 }
-
-@media screen and (max-width: 1024px){
-    .nav-links{
-        width: 60%;
-    }
-}
-@media screen and (max-width: 768px){
-    body{
-        overflow-x: hidden;
-    }
-    .nav-links{
-     position: absolute;
-     right: 0px;
-     height: 92vh;
-     top: 8vh;
-     background-color: #f09ead;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     width: 50%;
-     transform: translateX(100%);
-     transition: transform 0.5s ease-in;
-    }
-    
-    .burger{
-        display: block;
-    }
-}
-
-.nav-active{
-    transform: translateX(0%);
-}
-
-.toggle .line1{
-    transform: rotate(-45deg) translate(-5px,6px);
-}
-.toggle .line2{
-    opacity: 0;
-}
-.toggle .line3{
-    transform: rotate(45deg) translate(-5px,-6px);
+.navbar-brand {
+    color: #fff!important;
 }
 
 /* Nav bar finish*/
 
-/*start of project section*/
 
-.h1-projeto{
+/* START of Project section */
+.one{
+    min-height: 350px;
+    margin: auto;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
-    color: #000;
-    margin-top: 60px;
-    font-size: 30px;
+    justify-content: center;
+    flex-wrap:  wrap;
+    flex-direction: column;
 }
 
-.section-projeto{
-    height: 450px;
-}
 
-.center-text{
-    width: 40%;
-    text-align: center;
-    margin: 0 auto;
-}
 
 .continue{
     text-decoration: none;
     color: #DA1552;
+    font-weight: bold;
 }
+/* END of Project section */
 
-
-
-/*end of project section*/
 
 /*start of news section*/
 
-.section-pink{
-    background-color: #f09ead;
-    height: 500px;
-}
-
-.section-news{
+.news{
+    min-height: 350px;
+    margin: auto;
     display: flex;
+    align-items: center;
     justify-content: center;
-    width: 80%;
-    margin: 0 auto;
+    flex-wrap:  wrap;
+    flex-direction: column;
 }
 
-.coluna{
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-top: 60px;
-}
-.quote1 img{
-    width: 30px;
-}
-.quote2 img{
-    width: 30px;  
-    float: right;
+@media only screen and (max-width: 985px) {
+    .news{
+        min-height:100px;
+    }
 }
 
-.news-des{
-    padding-top: 15%;
-}
-
-.place{
-position: relative;
-padding-top: 15%;
-left: 40%;
-}
-
-
-/*end of news section*/
-
-/*button*/
-
-
-.button{
+.saiba-mais{
+    color: #fff !important;
+    border-radius: 5px;
     background-color: #DA1552;
-    display: block;
-    width: 115px;
-    height: 25px;
+    padding: 3px 6px 3px 6px;
     text-align: center;
-    border-radius: 18px;
-    color: white;
-    font-weight: bold;
-    line-height: 25px;
-    text-decoration: none;
+    margin-top: 15px;
+    text-decoration: none !important;
 }
 
+a:hover {
+    font-size: 17px;
+    padding: 3px 6px 3px 6px;
 
-/*button*/
+  }
 
-/*start of  video section*/
-.section-white{
-    height: 500px;
+  button{
+      min-height: 5px;
+  }
+
+  @media only screen and (max-width: 400px){
+   .image{
+        width: 350px;
+    }
 }
 
-.videosize{
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-top: 60px;
-}
-/*end of video section*/
-
-/*start of  reals section*/
+/* END of NEWS section */
 
 
-.section-real{
+/* START of VIDEO section */
+
+.vid{
+    min-height: 450px;
+    margin: auto;
     display: flex;
+    align-items: center;
     justify-content: center;
-    width: 80%;
-    margin: 0 auto;
-}
-.count{
-    position: relative;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-top: 225px;
+    flex-wrap:  wrap;
 }
 
-/*end of reals section*/
+@media only screen and (max-width: 600px) {
+    .video{ 
+        width: 350px;
+        height: 200px;
+    }
+  }
+
+  /* END of VIDEO section */
+
+
+  /* START of COUNTER section */
+
+
+  .middle{
+    min-height: 350px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:  wrap;
+    flex-direction: column;
+}
+
+.two{
+    text-align: center;
+}
+
+  .counting-sec{
+      padding: 5px 0;
+  }
+  .inner-width{
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  .col{
+      flex: 1;
+      text-align: center;
+      padding: 20px;
+  }
+  
+  .col i{
+      font-size: 40px;
+  }
+  
+  .num{
+      font-size: 40px;
+      margin: 20px 0;
+  }
+  /* END of COUNTER section */
+
+
+  /* START OF SPONSERS SECTION */
+
+  .sponsers{
+    margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      min-height: 300px;
+      align-items: center;
+    justify-content: center;
+    flex-wrap:  wrap;
+}
+  /* END OF SPONSERS SECTION */
+
+
+/* END OF SPONSER SECTION */
+
+/*START OF FOOTER*/
+
+footer{
+display: flex;
+flex-wrap: wrap;
+}
+
+/*END OF FOOTER*/

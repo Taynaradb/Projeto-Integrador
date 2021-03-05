@@ -269,14 +269,21 @@ a:hover {
       min-height: 300px;
       align-items: center;
     justify-content: center;
-    flex-wrap:  wrap;
-}
+    flex-wrap:  wrap;}
+
+
   /* END OF SPONSERS SECTION */
 
 
-/* END OF SPONSER SECTION */
+
 
 /*START OF FOOTER*/
+.page-footer ul li a {
+    color: #DA1552;
+}
 
+.footer-copyright a {
+    color: #DA1552;
+}
 
-/*END OF FOOTER*/
+/*END OF FOOTER*/ 

@@ -388,6 +388,7 @@ a:hover {
 /*START OF LOGIN*/ 
 .form-container{
     position: absolute;
+    width: 20rem;
     top: 25vh;
     background: #fff;
     padding: 30px;
@@ -400,4 +401,5 @@ a:hover {
     height: 100vh;
     text-align: center;
  }
+
 /*END OF LOGIN*/ 

@@ -406,5 +406,7 @@ a:hover {
      background-color: #DA1552;
      border: none;
  }
-
+.login{
+    background-color: transparent;
+}
 /*END OF LOGIN*/ 

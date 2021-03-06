@@ -369,4 +369,17 @@ a:hover {
     margin: 10px;
 }
 
+.center{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:  wrap;
+    flex-direction: column; 
+    padding: 40px;
+}
+
+.center a{
+    font-size: 20px;
+}
 

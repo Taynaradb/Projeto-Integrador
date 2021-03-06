@@ -148,6 +148,7 @@ nav.link:hover{
 .projeto{
     padding-top: 55px;
     padding-bottom: 55px;
+    text-align: center;
 }
 
 .continue{
@@ -304,4 +305,60 @@ a:hover {
 .direito a{
     color: #DA1552;
 } 
+
+.direitos{
+    min-height: 700px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:  wrap;
+    flex-direction: column;
+}
 /*DIREITOS & LEIS*/ 
+
+
+.calen{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:  wrap;
+    flex-direction: column;
+}
+
+.calen ul li{
+    text-align: left;
+    font-weight:bolder;
+}
+
+.calen ul li img{
+    padding: 10px; 
+}
+
+.subtitle{
+    color: #f09ead;
+}
+
+.header1{
+    background-image: url(../images/header.jpg);
+    background-size: cover;
+    height: 50vh;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.requistos{
+    min-height: 400px;
+}
+
+.header2{
+    background-image: url(../images/header2.jpg);
+    background-size: cover;
+    height: 50vh;
+    text-align: center;
+    margin-top: 80px;
+}
+
+
+

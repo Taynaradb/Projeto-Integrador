@@ -390,7 +390,7 @@ a:hover {
     position: absolute;
     width: 20rem;
     height: 20rem;
-    top: 25vh;
+    top: 15vh;
     background: #E8E8E8;
     padding: 30px;
     border-radius: 10px;
@@ -410,3 +410,10 @@ a:hover {
     background-color: transparent;
 }
 /*END OF LOGIN*/ 
+
+/*START OF CONTACT*/
+
+.form-contato{
+}
+
+/*END OF CONTACT*/ 

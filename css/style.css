@@ -57,13 +57,7 @@ animation: beat 1.5s infinite;
     transform: translate(-50%, -50%);
 }
 
-button{
-    text-decoration: none;
-    padding: 12px 15px;
-    letter-spacing: 3px;
-}
-
-.saiba{
+.mybutton-saiba{
     position: relative;
     top: 70%;
     left: 70px;
@@ -71,14 +65,17 @@ button{
     color:#f09ead;
     background-color: #fff;
     border: 2px solid #f09ead;
+    text-decoration: none;
+    padding: 12px 15px;
+    letter-spacing: 3px;
 }
 
-.saiba:hover{
+.mybutton-saiba:hover{
     color: #fff;
     background-color:#f09ead;
 }
 
-.galeria{
+.mybutton-galeria{
     position: relative;
     top: 70%;
     left: 120px;
@@ -86,9 +83,12 @@ button{
     color: #fff;
     background-color: #f09ead;
     border: 2px solid #fff;
+    text-decoration: none;
+    padding: 12px 15px;
+    letter-spacing: 3px;
 }
 
-.galeria:hover{
+.mybutton-galeria:hover{
     color: #f09ead;
     background-color:#fff;
 }
@@ -283,22 +283,45 @@ a:hover {
 
 /*START OF FOOTER*/
 
-.page-footer{
-    min-height: 450px;
-    margin: auto;
+footer{
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+}
+.footer-content{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap:  wrap;
+    flex-direction: column;
+    text-align: center;
 }
-.page-footer ul li a {
-    color: #DA1552;
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials a{
+    text-decoration: none;
+    color: pink;
 }
 
-.footer-copyright a {
-    color: #DA1552;
+.socials a i{
+    font-size: 1.1rem;
 }
-
 /*END OF FOOTER*/ 
 
 /*DIRETOS & LEIS*/
@@ -417,3 +440,31 @@ a:hover {
 }
 
 /*END OF CONTACT*/ 
+
+/* START OF GALLERY*/
+.gallery {
+    background-color:#fff !important;
+    font-family: "Asap", sans-serif;
+    color:#DA1552;
+    margin:10px;
+    font-size:16px;
+  }
+  
+/*ENF OF GALLERY*/
+
+
+
+/* START OF DASHBOARD*/
+
+.hr-dash{
+    text-align: center;
+    border-left: 1px solid grey;
+}
+
+.dash ol li a{
+    line-height: 4rem;
+}
+
+.
+
+/* END OF DASHBOARD */

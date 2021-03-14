@@ -43,8 +43,12 @@ animation: beat 1.5s infinite;
 
 /*header starts */
 
+
+.space{
+    min-height: 3rem;
+}
 .header{
-    background-image: url(../images/background.jpg);
+    background-image: url(../images/bg.jpg);
     background-size: cover;
     height: 100vh;
     text-align: center;
@@ -218,8 +222,13 @@ a:hover {
     }
   }
 
+
+
   /* END of VIDEO section */
 
+  item:active{
+      border: none;
+  }
 
   /* START of COUNTER section */
 
@@ -266,15 +275,16 @@ a:hover {
 
   /* START OF SPONSERS SECTION */
 
-  .sponsers{
+  .item{
+    min-height: 350px;
     margin: auto;
-      display: flex;
-      flex-wrap: wrap;
-      min-height: 300px;
-      align-items: center;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    flex-wrap:  wrap;}
-
+    flex-wrap:  wrap;
+    flex-direction: column;
+    padding: 2rem;
+  }
 
   /* END OF SPONSERS SECTION */
 

@@ -9,4 +9,6 @@ window.addEventListener('load', () => {
 
 //GALLERY
 
-      //GALLERY
+//GALLERY
+
+     

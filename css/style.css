@@ -316,7 +316,7 @@ footer{
 }
 .socials a{
     text-decoration: none;
-    color: pink;
+    color: #DA1552;
 }
 
 .socials a i{
@@ -442,14 +442,12 @@ footer{
 /*END OF CONTACT*/ 
 
 /* START OF GALLERY*/
-.gallery {
-    background-color:#fff !important;
-    font-family: "Asap", sans-serif;
-    color:#DA1552;
-    margin:10px;
-    font-size:16px;
-  }
-  
+.item{
+    transition: .5 ease-in-out;
+}
+.item:hover{
+    filter: brightness(80%);
+}
 /*ENF OF GALLERY*/
 
 

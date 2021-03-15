@@ -473,6 +473,25 @@ footer{
     line-height: 4rem;
 }
 
-.
 
+.fullcard{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4rem;
+    margin: auto;
+    margin-top: 2.5rem;
+    padding: 2.5rem;
+    box-shadow: 0px 0px 90px -30px rgba(0,0,0,0.16);
+}
+
+.blog-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
 /* END OF DASHBOARD */

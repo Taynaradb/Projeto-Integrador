@@ -471,6 +471,7 @@ footer{
 
 .dash ol li a{
     line-height: 4rem;
+    position: relative;
 }
 
 
@@ -492,6 +493,16 @@ footer{
     justify-content: center;
     align-items: center;
     margin: auto;
-
 }
+
+aside li{
+    text-align:center;
+    list-style: none;
+    padding: 5px;
+    border-radius: 2rem;
+    width: 100%;
+  }
+  aside li a{
+    color: grey;
+  }
 /* END OF DASHBOARD */

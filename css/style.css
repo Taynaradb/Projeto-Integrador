@@ -61,6 +61,17 @@ animation: beat 1.5s infinite;
     transform: translate(-50%, -50%);
 }
 
+@media only screen and (max-width: 600px) {
+    .logo {
+      width: 300px;
+    }
+  }
+  @media only screen and (max-width: 350px) {
+    .logo {
+      width: 200px;
+    }
+  }
+
 .mybutton-saiba{
     position: relative;
     top: 70%;
@@ -438,6 +449,7 @@ footer{
  .mybutton{
      background-color: #DA1552;
      border: none;
+     border-radius: 2rem;
  }
 .login{
     background-color: transparent;
@@ -464,22 +476,48 @@ footer{
 
 /* START OF DASHBOARD*/
 
-.hr-dash{
-    text-align: center;
-    border-left: 1px solid grey;
-}
 
-.dash ol li a{
-    line-height: 4rem;
+.dash {
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border: solid;
+    border-color: #DA1552;
+    border-radius:2rem;
+  }
+  
+  .dash ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  .dash li {
+    color: #DA1552;
+    border-top: solid;
+    border-radius: 2rem;
+    list-style: none;
     position: relative;
-}
+    width: 100%;
+  }
+  
+  .dash a {
+    display: block;
+    padding: 10px 30px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
-
+  
 .fullcard{
+    position: relative;
     width: 80%;
     display: flex;
     justify-content: center;
-    align-items: center;
     border: 1px solid #ccc;
     border-radius: 4rem;
     margin: auto;

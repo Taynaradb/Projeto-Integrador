@@ -78,7 +78,7 @@
 
         <div class="form-row">
             <div class="form-group col-md-6">
-                <label for="telefone">Tekefone fixo</label>
+                <label for="telefone">Telefone fixo</label>
                 <input type="text" class="form-control" id="telefone" placeholder="(19) 1234-5678">
             </div>
             <div class="form-group col-md-6">
@@ -195,11 +195,12 @@
     </form>
     <!-- CADASTRO PAGE-->
 
+    
     <!-- START OF FOOTER-->
     <footer>
         <div class="footer-content">
             <h5>Rosa do Bem</h5>
-    
+
             <ul class="socials">
                 <li><a href="#"><img src="images/instagram.png"></a></li>
                 <li><a href="#"><img src="images/facebook.png"></a></li>
@@ -219,12 +220,38 @@
     <!-- jQuery library -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <!-- MASK -->
+    <script type="text/javascript" src="js/jquery.mask.min.js"></script>
     <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- JAVASCRIPT -->
-    <script src="js/function.js" type="text/javascript"></script>
+    
+   
+    <script>
+        $(document).ready(function ($) {
+            $("#cpf").mask("000.000.000-00");
+            $("#telefone").mask("(00) 0000-0000");
+            $("#cep").mask("00.000-000");
+            $("#data").mask("00/00/0000");
+            $("#celular").mask("(00) 00000-0000");
+
+            $("#rg").mask("999.999.999-w", {
+                translation: {
+                    'w': {
+                        pattern: /[Xx0-9]/
+                    }
+                },
+                reverse: true
+            })
+
+            $("#celular").mask("(00) 00000-0009");
+            $("#celularRecado").mask("(00) 00000-0009");
+            $("#cartaoSUS").mask("000 0000 0000 0000");
+			
+            
+        })
+    </script>
 
 </body>
 

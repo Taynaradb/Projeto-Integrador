@@ -9,6 +9,20 @@ body{
     overflow-x: hidden;
 }
 
+a{
+    color: #DA1552;
+}
+a:hover, a:focus{
+font-size: 17px;
+text-decoration: none;
+list-style: none;
+color: #DA1552;
+}
+
+.btn:hover{
+    background-color: #DA1552;
+}
+
 html{
     font-family: 'Inconsolata', monospace;
 }
@@ -86,8 +100,15 @@ animation: beat 1.5s infinite;
 }
 
 .mybutton-saiba:hover{
+    position: relative;
+    top: 70%;
+    left: 70px;
+    transform: translate(-50%, -50%);
     color: #fff;
     background-color:#f09ead;
+    text-decoration: none;
+    padding: 12px 15px;
+    letter-spacing: 3px; 
 }
 
 .mybutton-galeria{
@@ -104,8 +125,15 @@ animation: beat 1.5s infinite;
 }
 
 .mybutton-galeria:hover{
+    position: relative;
+    top: 70%;
+    left: 120px;
+    transform: translate(-50%, -50%);
     color: #f09ead;
     background-color:#fff;
+    text-decoration: none;
+    padding: 12px 15px;
+    letter-spacing: 3px;
 }
 
 /*header finished */
@@ -468,7 +496,7 @@ footer{
     transition: .5 ease-in-out;
 }
 .item:hover{
-    filter: brightness(80%);
+    filter: brightness(90%);
 }
 /*ENF OF GALLERY*/
 

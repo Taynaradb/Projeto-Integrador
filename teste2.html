@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!-- shortcut icon -->
+    <link href="images/heartbig.png" rel="shortcut icon">
+    <!-- Latest compiled and minified CSS -->
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- personalized css -->
+    <link href="css/style-teste.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+ <h1>Hello</h1>
+<div class="bg">
+    <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+</div>
+
+
+
+    <!-- bootstrap javascript-->
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+        $(document).ready(function ($) {
+            $("#telefone").mask("(00) 0000-0000");
+            $("#cep").mask("00.000-000");
+            $("#celular").mask("(00) 00000-0009");
+            $("#celularRecado").mask("(00) 00000-0009");
+        })
+    </script>
+
+
+</body>
+
+</html>

@@ -571,4 +571,14 @@ aside li{
   aside li a{
     color: grey;
   }
+
+  
 /* END OF DASHBOARD */
+
+
+/* TESTE */
+
+.bg{background-color: #DA1552;}
+div, li, a, .dash-link {
+    color: black i !important;
+}

@@ -14,11 +14,10 @@
 
     <div class="container">
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="images/logo.png" width="100px"></a>
+            <div class="container">
                 <a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    Conta
+                    <img src="images/logo.png" width="100px">
                 </a>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
@@ -41,10 +40,11 @@
                 </div>
             </div>
         </nav>
+        <!-- Main -->
         <main class="fullcard">
             <div class="row">
-                <aside class="col-md-3 d-flex justify-content-center align-items-center col-sm mt-5">
-                    <ul class="nav flex-sm-column text-center">
+                <aside class="col-md-3 d-flex justify-content-start col-sm mt-5">
+                    <ul class="nav flex-sm-column dash">
                         <li class="nav-item">
                             <a href="#" class="nav-link">Perfil</a>
                         </li>
@@ -57,7 +57,7 @@
                         <li class="nav-item">
                             <a href="#" class="nav-link">Direitos e leis</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item me-5">
                             <a href="#" class="nav-link">Termos de condições</a>
                         </li>
                         <li class="nav-item">
@@ -65,16 +65,17 @@
                         </li>
                     </ul>
                 </aside>
-                <div class="col-md-9 col-sm mt-5 profile">
-                    <div class="row">
-                        <div class="col-md-2 d-flex align-items-start">
-                            <img src="images/profile.png">
+                <div class="col-md-9 col-sm profile blog-main">
+                    <form class="row">
+                        <div class="col-md-2 d-flex align-items-start pic container">
+                            <img class="pic" src="images/profile.png">
                         </div>
-                        <div class="col-md-10 mt-4">
-                            <label for="telefone">Nome completo:</label>
-                            <input type="text" class="form-control" id="telefone" disabled
-                                placeholder="Maria das Dores">
+                        <div class="form-group col-md-10 mt-4">
+                            <label for="inputAddress">Nome completo:</label>
+                            <input type="text" class="form-control input-name" id="inputAddress"
+                                placeholder="Maria das Dores" disabled>
                         </div>
+
                         <div class="col-sm-6 mt-4">
                             <label for="telefone">Telefone fixo</label>
                             <input type="text" class="form-control" id="telefone" placeholder="(19) 1234-5678">
@@ -83,6 +84,7 @@
                             <label for="celular">Celular</label>
                             <input type="text" class="form-control" id="celular" placeholder="(19) 99999-9999">
                         </div>
+
                         <div class="col-sm-6 mt-4">
                             <label for="celularRecado">Celular para recado</label>
                             <input type="text" class="form-control" id="celularRecado" placeholder="(19) 99999-9999">
@@ -98,11 +100,72 @@
                                 <option value="amigo">Amigo(a)</option>
                             </select>
                         </div>
-                    </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-2">
+                                <label for="cep">CEP</label>
+                                <input type="text" class="form-control" id="cep">
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-8">
+                            <label for="rua">Rua</label>
+                            <input type="text" class="form-control" id="rua" placeholder="Av brasil">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="numero">N°</label>
+                            <input type="number" class="form-control" id="numero" placeholder="1234">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="complemento">Complemento</label>
+                            <input type="text" class="form-control" id="complemento" placeholder="Apt bloco condominio">
+                        </div>
+                        <div class="form-group col-md-8">
+                            <label for="bairro">Bairro</label>
+                            <input type="text" class="form-control" id="bairro" placeholder="jardim ">
+                        </div>
+                        <div class="form-group col-md-7">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" class="form-control" id="cidade">
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="estado">Estado</label>
+                            <select id="estado" class="form-control">
+                                <option selected>Choose...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary mybutton mt-5">Atualizar</button>
+                    </form>
                 </div>
-            </div>
+            </div><!-- /.row -->
         </main>
     </div>
+
+    <!-- START OF FOOTER-->
+    <footer class="mt-5">
+        <div class="footer-content d-flex justify-content-center">
+            <h5>Rosa do Bem</h5>
+</div>
+<div class="d-flex justify-content-center">
+            <ul class="list-unstyled d-flex">
+                <li><a href="#"><img src="images/instagram.png"></a></li>
+                <li><a href="#"><img src="images/facebook.png"></a></li>
+                <li><a href="#"><img src="images/whatsapp.png"></a></li>
+                <li><a href="#"><img src="images/email.png"></a></li>
+            </ul>
+        </div>
+        <div class="footer-copyright text-center py-3">
+            <p>&copy; Copyright
+                <a href="#">Rosadobem.com.br</a>
+            </p>
+            <p>Designed By TDB</p>
+        </div>
+    </footer>
+    <!-- END OF FOOTER-->
+
+
 
 
     <script src="bootstrap/bootstrap.bundle.min.js"></script>

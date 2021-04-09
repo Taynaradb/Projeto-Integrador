@@ -7,7 +7,8 @@
 body{
     font-size: 16px;
     overflow-x: hidden;
-    background-image: url(/images/bg-dash.jpg);
+    background-image: url(/images/bg.png);
+    background-repeat: repeat;
 }
 
 .navbar-toggler{
@@ -67,7 +68,7 @@ body{
 
   /* No greater than 1199px, no less than 768px */
   @media (max-width:1199px) and (min-width:768px) {
-    img, .pic {
+    .pic {
         width: 80px;
     }
    
@@ -81,5 +82,9 @@ ul, .dash{
   color: #DA1552;
 }
 
+.titulo{
+  color: #fff;
+  font-size: 25px;
+}
 
 

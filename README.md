@@ -37,7 +37,7 @@ Aplicativo web para informações, cadastro e controle de agendamentos de exames
 CREATE DATABASE cadastro CHARACTER SET utf8 COLLATE utf8_general_ci;
 ```
 
-### Criação da tabela médicos
+### Criação da tabela inscrições
 
 ```sql
 CREATE TABLE inscricao (id int NOT NULL AUTO_INCREMENT PRIMARY KEY, nome varchar(100), rg varchar(50), cpf varchar(50), dataNasci date, cartaoSUS varchar(50), telefone varchar(25), celular varchar(25), celularRecado varchar(25), parentesco varchar(25), email varchar(100), confirmarEmail varchar(100), cep varchar(15), rua varchar(100), num int, compl varchar(100), bairro varchar(100), cidade varchar(30), estado varchar(25), termo varchar(15));

@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+a, a:hover{
+    font-size: 16px;
+
+}
+
 body{
     font-size: 16px;
     overflow-x: hidden;
@@ -12,12 +17,7 @@ body{
 a{
     color: #DA1552;
 }
-a:hover, a:focus{
-font-size: 17px;
-text-decoration: none;
-list-style: none;
-color: #DA1552;
-}
+
 
 .btn:hover{
     background-color: #DA1552;
@@ -371,6 +371,13 @@ footer{
 .socials a i{
     font-size: 1.1rem;
 }
+
+.container {
+    width: auto;
+    max-width: 680px;
+    padding: 0 15px;
+  }
+  
 /*END OF FOOTER*/ 
 
 /*DIRETOS & LEIS*/
@@ -434,7 +441,6 @@ footer{
 
 .subtitle{
     color:#696969;
-    padding: 25px;
 }
 
 .list li{ 

@@ -1,34 +1,40 @@
-<?php include "../includes/nav.php" ?>
+<?php include "../includes/dash-nav.php"; 
 
-<!-- CADASTRO PAGE-->
-<main class="container">
-    <div class="projeto">
-        <h2 class="title">Cadastro</h2>
-    </div>
-    <form method="post" action="recebecadastro.php" enctype="multipart/form-data">
+include "../includes/config.php"; 
+
+$id_inscritos = $_GET['id'];
+
+$sqlBusca = "SELECT * FROM inscricao WHERE id = {$id_inscritos}";
+$listaDeInscritos = mysqli_query($conn, $sqlBusca);
+
+$nome = $rg = $cpf = $dataNasci = $cartaoSUS = $telefone = $celular = $celularRecado = 
+$parentesco = $email = $confirmarEmail = $cep = $rua = $num = $compl = $bairro = $cidade
+ = $estado = "";
+
+
+    while($inscrito = mysqli_fetch_assoc($listaDeInscritos)){
+    $nome = $inscrito['nome'];
+    $telefone = $inscrito['telefone'];
+    $celular = $inscrito['celular'];
+    $celularRecado = $inscrito['celularRecado'];
+    $email = $inscrito['email'];
+    $cep = $inscrito['cep'];
+    $rua = $inscrito['rua'];
+    $num = $inscrito['num'];
+    $compl = $inscrito['compl'];
+    $bairro = $inscrito['bairro'];
+    $cidade = $inscrito['cidade'];
+}
+?>
+
+
+<form action="inscritos-alterar.php" name="cadastr-inscritos" method="post">
+    <input type="hidden" name="id_paciente" value="<?php echo $id_paciente ; ?>">
+
+    <div class="row">
         <div class="form-group">
             <label for="nome">Nome completo:</label>
             <input required name="nome" type="text" class="form-control" id="nome" placeholder="Nome completo">
-        </div>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="rg">RG</label>
-                <input name="rg" required type="text" class="form-control" id="rg" placeholder="123.456-78">
-            </div>
-            <div class="form-group col-md-6">
-                <label for="cpf">CPF</label>
-                <input required name="cpf" type="text" class="form-control" id="cpf" placeholder="123.456.789-10">
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="data">Data de nascimento</label>
-                <input required name="data" type="date" class="form-control" id="data" placeholder="01/02/1990">
-            </div>
-            <div class="form-group col-md-6">
-                <label for="cartaoSUS">Cartão do SUS</label>
-                <input required name="cartaoSUS" type="text" class="form-control" id="cartaoSUS" placeholder="700000000000">
-            </div>
         </div>
 
         <div class="form-row">
@@ -38,13 +44,15 @@
             </div>
             <div class="form-group col-md-6">
                 <label for="celular">Celular</label>
-                <input required name="celular" type="text" class="form-control" id="celular" placeholder="(19) 99999-9999">
+                <input required name="celular" type="text" class="form-control" id="celular"
+                    placeholder="(19) 99999-9999">
             </div>
         </div>
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="celularRecado">Celular para recado</label>
-                <input type="text" name="celularRecado" class="form-control" id="celularRecado" placeholder="(19) 99999-9999">
+                <input type="text" name="celularRecado" class="form-control" id="celularRecado"
+                    placeholder="(19) 99999-9999">
             </div>
             <div class="form-group col-md-6">
                 <label for="parente">Grau de parentesco</label>
@@ -61,10 +69,6 @@
         <div class="form-group">
             <label for="email">E-mail</label>
             <input required name="email" type="email" class="form-control" id="email" placeholder="maria@rosadobem.com">
-        </div>
-        <div class="form-group">
-            <label for="confirmar">Confirmar e-mail</label>
-            <input name="confirmar" type="text" class="form-control" id="email" placeholder="maria@rosadobem.com">
         </div>
 
         <div>
@@ -96,58 +100,13 @@
                 </div>
 
             </div>
-            <div class="form-row">
-                <div class="form-group col-md-7">
-                    <label for="cidade">Cidade</label>
-                    <input required name="cidade" type="text" class="form-control" id="cidade">
-                </div>
-                <div class="form-group col-md-5">
-                    <label for="uf">Estado</label>
-                    <input required name="uf" type="text" class="form-control" id="uf">
-                </div>
-            </div>
             <span><br></span>
-            <div class="form-row">
-                <div class="col">
-                    <label for="docRG">RG (FRENTE E VERSO)</label>
-                    <input type="file" name="rgArquivo" class="form-control-file" id="docRG">
-                </div>
-                <div class="col">
-                    <label for="docCPF">CPF</label>
-                    <input type="file" name="cpfArquivo" class="form-control-file" id="docCPF">
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="col">
-                    <label for="docSUS"> Cartão do SUS (Frente e verso) </label>
-                    <input type="file" name="susArquivo" class="form-control-file" id="docSUS">
-                </div>
-                <div class="col">
-                    <label for="docEndereco">Comprovante de endereço</label>
-                    <input type="file" name="enderecoArquivo" class="form-control-file" id="docEndereco">
-                </div>
-            </div>
-            <span><br></span>
-            <div class="form-group">
-                <div class="form-check">
-                    <input class="form-check-input is-invalid" type="checkbox" value="aceito" name="aceito" id="aceito" required>
-                    <label class="form-check-label" for="aceito">
-                        Li e estou de acordo com os <a href="#">Termos de uso</a>.
-                    </label>
-                    <div class="invalid-feedback">
-                        Você deve concordar antes de se cadastrar.
-                    </div>
-                </div>
-            </div>
-
 
             <button type="submit" class="btn btn-primary mybutton">Enviar</button>
         </div>
-    </form>
-</main>
-<!-- CADASTRO PAGE-->
+    </div>
+</form>
 
-<?php include "../includes/rodape.php" ?>
 
 <script>
     $(document).ready(function ($) {
@@ -235,7 +194,3 @@
         });
     })
 </script>
-
-</body>
-
-</html>
